@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginFragment"
+
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:paddingStart="24dp"
+        app:title="Digital House Foods"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:titleTextColor="@android:color/white"
+        tools:ignore="RtlSymmetry" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tfEmailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="@string/email"
+            app:boxBackgroundColor="@android:color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmailLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorPrimary"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tfPassLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/password"
+            app:boxBackgroundColor="@android:color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/colorPrimary"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnLoginLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:backgroundTint="@color/buttonPink"
+            android:padding="16dp"
+            android:text="@string/log_in"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="48dp"
+            android:text="@string/or"
+            android:textColor="@color/colorText" />
+
+        <Button
+            android:id="@+id/btnRegisterLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="96dp"
+            android:backgroundTint="@color/buttonGray"
+            android:padding="16dp"
+            android:text="@string/register"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</LinearLayout>

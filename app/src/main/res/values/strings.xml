@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Desafio2DHA</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="log_in">LOG IN</string>
+    <string name="or">OR</string>
+    <string name="register">Register</string>
+</resources>
