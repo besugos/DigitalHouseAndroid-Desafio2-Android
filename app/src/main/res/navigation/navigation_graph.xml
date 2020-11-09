@@ -12,15 +12,24 @@
         <action
             android:id="@+id/action_loginFragment_to_registerFragment5"
             app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
         android:name="com.besugos.desafio2dha.RegisterFragment"
         android:label="RegisterFragment"
         tools:layout="@layout/fragment_register"
-    >
+        >
         <action
             android:id="@+id/action_registerFragment_to_loginFragment"
             app:destination="@id/loginFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.besugos.desafio2dha.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home"
+        />
 </navigation>

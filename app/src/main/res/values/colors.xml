@@ -6,4 +6,6 @@
     <color name="buttonPink">#FF5252</color>
     <color name="buttonGray">#8492A6</color>
     <color name="colorText">#47525E</color>
+    <color name="colorRestaurante">#1F2D3D</color>
+    <color name="colorDescricao">#8492A6</color>
 </resources>
