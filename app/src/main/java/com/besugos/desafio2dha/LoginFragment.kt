@@ -31,6 +31,12 @@ class LoginFragment : Fragment() {
         btnRegister.setOnClickListener {
             navController.navigate(R.id.registerFragment)
         }
+
+        val btnLogin: Button = view.findViewById(R.id.btnLoginLogin)
+
+        btnLogin.setOnClickListener {
+            navController.navigate(R.id.homeFragment)
+        }
     }
 
 }
