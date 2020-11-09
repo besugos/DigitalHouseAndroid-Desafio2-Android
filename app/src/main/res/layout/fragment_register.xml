@@ -53,7 +53,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/tfEmailLogin"
+            android:id="@+id/tfEmailRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -61,7 +61,7 @@
             app:boxBackgroundColor="@android:color/white">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etEmailLogin"
+                android:id="@+id/etEmailRegister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
@@ -74,7 +74,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:hint="@string/repeat_password"
+            android:hint="@string/password"
             app:boxBackgroundColor="@android:color/white">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -87,15 +87,15 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/tfPassLogin"
+            android:id="@+id/tfRptPassRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:hint="@string/password"
+            android:hint="@string/repeat_password"
             app:boxBackgroundColor="@android:color/white">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etPassLogin"
+                android:id="@+id/etRptPassRegister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"

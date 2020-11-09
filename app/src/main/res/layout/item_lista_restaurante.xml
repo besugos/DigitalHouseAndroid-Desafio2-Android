@@ -5,11 +5,13 @@
     android:id="@+id/cardRestaurante"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
     android:background="@android:color/white"
     android:clickable="true"
     android:focusable="true"
-    app:cardCornerRadius="8dp">
+    app:cardCornerRadius="10dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,14 +22,16 @@
         <ImageView
             android:id="@+id/ivPic"
             android:layout_width="match_parent"
-            android:layout_height="180dp"
+            android:layout_height="190dp"
             android:layout_margin="0dp"
-            android:contentDescription="@string/tony_roma_s"
+            android:contentDescription="@string/descri_o_do_restaurante"
             android:scaleType="centerCrop"
+            android:scrollY="-16dp"
+            android:layout_gravity="bottom"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@drawable/tony" />
+            tools:srcCompat="@drawable/aoyama" />
 
         <TextView
             android:id="@+id/tvNomeRestaurante"
@@ -36,7 +40,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:textColor="@color/colorRestaurante"
-            android:textSize="24sp"
+            android:textSize="28sp"
             android:textStyle="bold"
             tools:text="Tony Roma's" />
 
@@ -50,7 +54,7 @@
             android:ellipsize="end"
             android:maxLines="1"
             android:textColor="@color/colorDescricao"
-            android:textSize="16sp"
+            android:textSize="14sp"
             tools:text="Av. Lavandisca, 717 - Indianópolis, São Paulo" />
 
         <TextView
@@ -59,11 +63,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="0dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="12dp"
             android:ellipsize="end"
             android:maxLines="1"
             android:textColor="@color/colorDescricao"
-            android:textSize="14sp"
+            android:textSize="12sp"
             tools:text="Fecha às 22:00" />
 
     </LinearLayout>

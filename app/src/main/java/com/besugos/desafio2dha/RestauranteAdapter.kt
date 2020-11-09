@@ -7,8 +7,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class MeuAdapter(private val dataSet: List<Restaurante>) :
-    RecyclerView.Adapter<MeuAdapter.MeuViewHolder>() {
+class RestauranteAdapter(private val dataSet: List<Restaurante>) :
+    RecyclerView.Adapter<RestauranteAdapter.MeuViewHolder>() {
 
     class MeuViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val imgRestaurante: ImageView = view.findViewById(R.id.ivPic)

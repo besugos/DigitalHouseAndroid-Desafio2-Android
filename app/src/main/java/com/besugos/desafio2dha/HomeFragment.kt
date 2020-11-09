@@ -41,7 +41,7 @@ class HomeFragment : Fragment() {
             "Fecha às 00:00"
         )
         val rest3 = Restaurante(
-            R.drawable.outback,
+            R.drawable.outbackmoema,
             "Outback - Moema",
             "Av. Moaci, 187, 187 - Moema, São Paulo",
             "Fecha às 00:00"
@@ -54,7 +54,7 @@ class HomeFragment : Fragment() {
         )
 
 
-        val viewAdapter = MeuAdapter(arrayListOf(rest1, rest2, rest3, rest4))
+        val viewAdapter = RestauranteAdapter(arrayListOf(rest1, rest2, rest3, rest4))
 
         recyclerView.apply {
             setHasFixedSize(true)
