@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -54,11 +56,15 @@ class HomeFragment : Fragment() {
         )
 
 
-        val viewAdapter = RestauranteAdapter(arrayListOf(rest1, rest2, rest3, rest4))
+        val viewAdapter = RestauranteAdapter(arrayListOf(rest1, rest2, rest3, rest4)) {
+            val navController = Navigation.findNavController(view)
+
+                navController.navigate(R.id.detalheFragment)
+
+        }
 
         recyclerView.apply {
             setHasFixedSize(true)
-
             layoutManager = viewManager
             adapter = viewAdapter
 

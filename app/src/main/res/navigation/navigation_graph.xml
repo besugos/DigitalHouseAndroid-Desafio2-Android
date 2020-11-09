@@ -35,4 +35,13 @@
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home"
         />
+    <fragment
+        android:id="@+id/detalheFragment"
+        android:name="com.besugos.desafio2dha.DetalheFragment"
+        android:label="fragment_detalhe"
+        tools:layout="@layout/fragment_detalhe" >
+        <action
+            android:id="@+id/action_detalheFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>

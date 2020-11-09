@@ -8,4 +8,6 @@
     <color name="colorText">#47525E</color>
     <color name="colorRestaurante">#1F2D3D</color>
     <color name="colorDescricao">#8492A6</color>
+    <color name="colorTrans">#00000000</color>
+    <color name="colorTextDark">#5A6978</color>
 </resources>

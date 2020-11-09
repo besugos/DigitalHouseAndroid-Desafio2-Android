@@ -7,10 +7,10 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class RestauranteAdapter(private val dataSet: List<Restaurante>) :
-    RecyclerView.Adapter<RestauranteAdapter.MeuViewHolder>() {
+class RestauranteAdapter(private val dataSetRestaurantes: List<Restaurante>, private val listener: (Restaurante) -> Unit) :
+    RecyclerView.Adapter<RestauranteAdapter.ViewHolderRestaurantes>() {
 
-    class MeuViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+    class ViewHolderRestaurantes(view: View) : RecyclerView.ViewHolder(view) {
         private val imgRestaurante: ImageView = view.findViewById(R.id.ivPic)
         private val txtNome: TextView = view.findViewById(R.id.tvNomeRestaurante)
         private val txtLocal: TextView = view.findViewById(R.id.tvLocal)
@@ -25,18 +25,20 @@ class RestauranteAdapter(private val dataSet: List<Restaurante>) :
 
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MeuViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolderRestaurantes {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.item_lista_restaurante, parent, false)
 
-        return MeuViewHolder(view)
+        return ViewHolderRestaurantes(view)
     }
 
-    override fun onBindViewHolder(holder: MeuViewHolder, position: Int) {
-        holder.bind(dataSet[position])
+    override fun onBindViewHolder(holder: ViewHolderRestaurantes, position: Int) {
+        val item = dataSetRestaurantes[position]
+        holder.bind(item)
+        holder.itemView.setOnClickListener { listener(item) }
     }
 
-    override fun getItemCount() = dataSet.size
+    override fun getItemCount() = dataSetRestaurantes.size
 }
 
 
