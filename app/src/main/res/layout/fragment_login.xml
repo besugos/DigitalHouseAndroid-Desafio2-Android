@@ -23,13 +23,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="24dp">
+        android:padding="16dp">
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/tfEmailLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="16dp"
             android:hint="@string/email"
             app:boxBackgroundColor="@android:color/white">
 
@@ -47,7 +47,7 @@
             android:id="@+id/tfPassLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="8dp"
             android:hint="@string/password"
             app:boxBackgroundColor="@android:color/white">
 
@@ -71,13 +71,42 @@
             android:text="@string/log_in"
             android:textSize="16sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="48dp"
-            android:text="@string/or"
-            android:textColor="@color/colorText" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C0CCDA"
+        android:layout_marginTop="42dp"
+        android:layout_weight="5"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/or"
+        android:textAllCaps="false"
+
+        android:textColor="@color/colorText" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#C0CCDA"
+        android:layout_marginTop="42dp"
+        android:layout_weight="5"
+        />
+
+
+    </LinearLayout>
 
         <Button
             android:id="@+id/btnRegisterLogin"

@@ -7,4 +7,6 @@
     <string name="log_in">LOG IN</string>
     <string name="or">OR</string>
     <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="repeat_password">Repeat Password</string>
 </resources>
