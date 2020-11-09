@@ -4,19 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_graph"
     app:startDestination="@id/loginFragment">
-
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.besugos.desafio2dha.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_loginFragment_to_registerFragment"
+            android:id="@+id/action_loginFragment_to_registerFragment5"
             app:destination="@id/registerFragment" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
         android:name="com.besugos.desafio2dha.RegisterFragment"
-        android:label="fragment_register"
-        tools:layout="@layout/fragment_register" />
+        android:label="RegisterFragment"
+        tools:layout="@layout/fragment_register"
+    >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
 </navigation>
