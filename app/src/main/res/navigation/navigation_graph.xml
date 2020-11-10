@@ -37,13 +37,13 @@
         >
         <action
             android:id="@+id/action_homeFragment_to_detalheFragment"
-            app:destination="@id/detalheFragment" />
+            app:destination="@id/restauranteFragment" />
     </fragment>
     <fragment
-        android:id="@+id/detalheFragment"
-        android:name="com.besugos.desafio2dha.DetalheFragment"
+        android:id="@+id/restauranteFragment"
+        android:name="com.besugos.desafio2dha.RestauranteFragment"
         android:label="frag_detalhe"
-        tools:layout="@layout/fragment_detalhe" >
+        tools:layout="@layout/fragment_restaurante" >
         <action
             android:id="@+id/action_detalheFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
@@ -58,6 +58,6 @@
         tools:layout="@layout/fragment_prato" >
         <action
             android:id="@+id/action_pratoFragment_to_detalheFragment"
-            app:destination="@id/detalheFragment" />
+            app:destination="@id/restauranteFragment" />
     </fragment>
 </navigation>

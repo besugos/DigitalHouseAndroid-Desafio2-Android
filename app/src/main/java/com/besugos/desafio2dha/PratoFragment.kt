@@ -32,7 +32,7 @@ class PratoFragment : Fragment() {
 
 
         view.findViewById<ImageButton>(R.id.btnBackPrato).setOnClickListener {
-            navController.navigate(R.id.detalheFragment)
+            navController.navigate(R.id.restauranteFragment)
         }
     }
 
