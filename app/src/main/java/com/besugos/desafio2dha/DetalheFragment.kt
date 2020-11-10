@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
+import androidx.core.os.bundleOf
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -32,41 +33,15 @@ class DetalheFragment : Fragment() {
 
         val recyclerView = view.findViewById<RecyclerView>(R.id.rv_lista_pratos)
 
-        val prato1 = Prato(
-            R.drawable.aoyama, "Salada com molho Gengibre"
-        )
-        val prato2 = Prato(
-            R.drawable.aoyama, "Salada com molho Gengibre"
-        )
-        val prato3 = Prato(
-            R.drawable.aoyama, "Salada com molho Gengibre"
-        )
-        val prato4 = Prato(
-            R.drawable.aoyama, "Salada com molho Gengibre"
-        )
-        val prato5 = Prato(
-            R.drawable.aoyama, "Salada com molho Gengibre"
-        )
-        val prato6 = Prato(
-            R.drawable.aoyama, "Salada com molho Gengibre"
-        )
-        val prato7 = Prato(
-            R.drawable.aoyama, "Salada com molho Gengibre"
-        )
-        val prato8 = Prato(
-            R.drawable.aoyama, "Salada com molho Gengibre"
-        )
-        val prato9 = Prato(
-            R.drawable.aoyama, "Salada com molho Gengibre"
-        )
-        val prato10 = Prato(
-            R.drawable.aoyama, "Salada com molho Gengibre"
-        )
+        val pratos = arrayListOf<Prato>()
 
+        for (i in 0..9) {
+            pratos.add(Prato(R.drawable.aoyama, "Salada com molho Gengibre", "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis."))
+        }
 
-        val viewAdapter = PratoAdapter(arrayListOf(prato1, prato2, prato3, prato4, prato5, prato6, prato7, prato8, prato9, prato10)) {
-//            val navController = Navigation.findNavController(view)
-            navController.navigate(R.id.homeFragment)
+        val viewAdapter = PratoAdapter(pratos) {
+            val bundle = bundleOf("FOTO" to it.fotoURL, "NOME" to it.nome, "RECEITA" to it.receita)
+            navController.navigate(R.id.homeFragment, bundle)
         }
 
         recyclerView.apply {
