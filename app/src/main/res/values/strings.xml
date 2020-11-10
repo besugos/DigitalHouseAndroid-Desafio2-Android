@@ -12,4 +12,7 @@
     <string name="tony_roma_s">Tony Roma\'s</string>
     <string name="descri_o_do_restaurante">Descrição do Restaurante</string>
     <string name="foto_do_prato">Foto do prato</string>
+    <string name="back">back</string>
+    <string name="foto_do_restaurante">Foto do restaurante</string>
+    <string name="pratos_principais">Pratos Principais</string>
 </resources>

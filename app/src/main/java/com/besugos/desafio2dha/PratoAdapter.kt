@@ -17,14 +17,12 @@ class PratoAdapter (private val dataSetPratos: List<Prato>, private val listener
         fun bind(restaurante: Prato) {
             imgRestaurante.setImageResource(restaurante.fotoURL)
             txtNome.text = restaurante.nome
-
         }
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolderPratos {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_lista_restaurante, parent, false)
+            .inflate(R.layout.item_prato, parent, false)
 
         return ViewHolderPratos(view)
     }

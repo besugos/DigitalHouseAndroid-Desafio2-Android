@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/cardRestaurante"
-    android:layout_width="match_parent"
+    android:layout_width="190dp"
     android:layout_height="wrap_content"
     android:layout_marginBottom="8dp"
     android:layout_marginStart="8dp"
@@ -22,12 +22,10 @@
         <ImageView
             android:id="@+id/ivPic"
             android:layout_width="match_parent"
-            android:layout_height="190dp"
+            android:layout_height="130dp"
             android:layout_margin="0dp"
             android:contentDescription="@string/descri_o_do_restaurante"
             android:scaleType="centerCrop"
-            android:scrollY="-16dp"
-            android:layout_gravity="bottom"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -37,38 +35,18 @@
             android:id="@+id/tvNomeRestaurante"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_margin="8dp"
             android:textColor="@color/colorRestaurante"
-            android:textSize="28sp"
+            android:textSize="16sp"
             android:textStyle="bold"
-            tools:text="Tony Roma's" />
-
-        <TextView
-            android:id="@+id/tvLocal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginBottom="0dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:maxLines="2"
             android:ellipsize="end"
-            android:maxLines="1"
-            android:textColor="@color/colorDescricao"
-            android:textSize="14sp"
-            tools:text="Av. Lavandisca, 717 - Indianópolis, São Paulo" />
+            android:fontFamily="@font/roboto"
+            tools:text="Salada com molho Gengibre" />
 
-        <TextView
-            android:id="@+id/tvHora"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginBottom="12dp"
-            android:ellipsize="end"
-            android:maxLines="1"
-            android:textColor="@color/colorDescricao"
-            android:textSize="12sp"
-            tools:text="Fecha às 22:00" />
+
 
     </LinearLayout>
 

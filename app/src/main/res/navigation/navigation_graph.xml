@@ -34,11 +34,15 @@
         android:name="com.besugos.desafio2dha.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home"
-        />
+        >
+        <action
+            android:id="@+id/action_homeFragment_to_detalheFragment"
+            app:destination="@id/detalheFragment" />
+    </fragment>
     <fragment
         android:id="@+id/detalheFragment"
         android:name="com.besugos.desafio2dha.DetalheFragment"
-        android:label="fragment_detalhe"
+        android:label="frag_detalhe"
         tools:layout="@layout/fragment_detalhe" >
         <action
             android:id="@+id/action_detalheFragment_to_homeFragment"
