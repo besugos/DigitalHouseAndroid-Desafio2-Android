@@ -1,4 +1,4 @@
-package com.besugos.desafio2dha
+package com.besugos.desafio2dha.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,6 +9,8 @@ import androidx.core.os.bundleOf
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.besugos.desafio2dha.R
+import com.besugos.desafio2dha.repository.Repository
 
 class HomeFragment : Fragment() {
 

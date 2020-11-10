@@ -1,13 +1,12 @@
-package com.besugos.desafio2dha
+package com.besugos.desafio2dha.view
 
 import android.content.Intent
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.view.WindowInsets
-import android.view.WindowManager
+import com.besugos.desafio2dha.MainActivity
+import com.besugos.desafio2dha.R
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,6 +19,6 @@ class SplashActivity : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             finish()
-        }, 1000)
+        }, 2000)
     }
 }

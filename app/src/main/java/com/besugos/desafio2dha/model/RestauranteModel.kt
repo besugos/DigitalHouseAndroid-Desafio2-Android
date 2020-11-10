@@ -1,4 +1,4 @@
-package com.besugos.desafio2dha
+package com.besugos.desafio2dha.model
 
 data class RestauranteModel(
     val fotoURL: Int,

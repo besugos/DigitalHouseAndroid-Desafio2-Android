@@ -1,23 +1,31 @@
-package com.besugos.desafio2dha
+package com.besugos.desafio2dha.repository
+
+import com.besugos.desafio2dha.model.PratoModel
+import com.besugos.desafio2dha.R
+import com.besugos.desafio2dha.model.RestauranteModel
 
 class Repository {
 
-    val prato1 = PratoModel(R.drawable.aoyama,
+    val prato1 = PratoModel(
+        R.drawable.aoyama,
         "Salada com molho Gengibre",
         "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque " +
                 "laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis.")
 
-    val prato2 = PratoModel(R.drawable.tony,
+    val prato2 = PratoModel(
+        R.drawable.tony,
         "Camarões à moda da casa",
         "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque " +
                 "laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis.")
 
-    val prato3 = PratoModel(R.drawable.sisenor,
+    val prato3 = PratoModel(
+        R.drawable.sisenor,
         "Brunch australiano",
         "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque " +
                 "laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis.")
 
-    val prato4 = PratoModel(R.drawable.outbackmoema,
+    val prato4 = PratoModel(
+        R.drawable.outbackmoema,
         "Paella mexicana",
         "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque " +
                 "laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis.")

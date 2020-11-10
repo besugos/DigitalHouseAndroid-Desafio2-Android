@@ -6,7 +6,7 @@
     app:startDestination="@id/loginFragment">
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.besugos.desafio2dha.LoginFragment"
+        android:name="com.besugos.desafio2dha.view.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login">
         <action
@@ -18,7 +18,7 @@
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
-        android:name="com.besugos.desafio2dha.RegisterFragment"
+        android:name="com.besugos.desafio2dha.view.RegisterFragment"
         android:label="RegisterFragment"
         tools:layout="@layout/fragment_register">
         <action
@@ -30,7 +30,7 @@
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.besugos.desafio2dha.HomeFragment"
+        android:name="com.besugos.desafio2dha.view.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home">
         <action
@@ -39,7 +39,7 @@
     </fragment>
     <fragment
         android:id="@+id/restauranteFragment"
-        android:name="com.besugos.desafio2dha.RestauranteFragment"
+        android:name="com.besugos.desafio2dha.view.RestauranteFragment"
         android:label="frag_detalhe"
         tools:layout="@layout/fragment_restaurante">
         <action
@@ -51,7 +51,7 @@
     </fragment>
     <fragment
         android:id="@+id/pratoFragment"
-        android:name="com.besugos.desafio2dha.PratoFragment"
+        android:name="com.besugos.desafio2dha.view.PratoFragment"
         android:label="PratoFragment"
         tools:layout="@layout/fragment_prato">
         <action

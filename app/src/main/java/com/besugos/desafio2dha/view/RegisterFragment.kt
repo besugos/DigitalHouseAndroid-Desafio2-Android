@@ -1,4 +1,4 @@
-package com.besugos.desafio2dha
+package com.besugos.desafio2dha.view
 
 import android.os.Bundle
 import android.text.Editable
@@ -8,11 +8,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import androidx.appcompat.view.SupportActionModeWrapper
 import androidx.appcompat.widget.Toolbar
-import androidx.core.os.bundleOf
-import androidx.navigation.fragment.findNavController
 import androidx.navigation.Navigation
+import com.besugos.desafio2dha.R
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 

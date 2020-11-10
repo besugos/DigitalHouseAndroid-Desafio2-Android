@@ -1,4 +1,4 @@
-package com.besugos.desafio2dha
+package com.besugos.desafio2dha.view
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.besugos.desafio2dha.R
+import com.besugos.desafio2dha.model.RestauranteModel
 
 class RestauranteAdapter(private val dataSetRestaurantes: List<RestauranteModel>, private val listener: (RestauranteModel) -> Unit) :
     RecyclerView.Adapter<RestauranteAdapter.ViewHolderRestaurantes>() {

@@ -1,4 +1,4 @@
-package com.besugos.desafio2dha
+package com.besugos.desafio2dha.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -10,6 +10,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.os.bundleOf
 import androidx.navigation.Navigation
+import com.besugos.desafio2dha.R
 
 
 class PratoFragment : Fragment() {

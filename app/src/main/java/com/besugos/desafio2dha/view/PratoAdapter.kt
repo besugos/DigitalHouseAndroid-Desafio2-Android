@@ -1,4 +1,4 @@
-package com.besugos.desafio2dha
+package com.besugos.desafio2dha.view
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.besugos.desafio2dha.R
+import com.besugos.desafio2dha.model.PratoModel
 
 class PratoAdapter (private val dataSetPratos: List<PratoModel>, private val listener: (PratoModel) -> Unit) :
     RecyclerView.Adapter<PratoAdapter.ViewHolderPratos>() {
@@ -29,7 +31,7 @@ class PratoAdapter (private val dataSetPratos: List<PratoModel>, private val lis
 
     override fun getItemCount() = dataSetPratos.size
 
-    override fun onBindViewHolder(holder: PratoAdapter.ViewHolderPratos, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolderPratos, position: Int) {
         val item = dataSetPratos[position]
         holder.bind(item)
         holder.itemView.setOnClickListener { listener(item) }
