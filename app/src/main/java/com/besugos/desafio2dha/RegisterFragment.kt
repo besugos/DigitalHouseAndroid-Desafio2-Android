@@ -23,7 +23,6 @@ class RegisterFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_register, container, false)
     }
 
@@ -96,62 +95,75 @@ class RegisterFragment : Fragment() {
                 view.findViewById<TextInputLayout>(R.id.tfRptPassRegister).error = ""
             }
         })
-
     }
 
     fun validaCampos(view: View): Boolean {
 
         var resultado = true
 
-        if (view.findViewById<TextInputEditText>(R.id.etNameRegister).text?.trim().isNullOrBlank()) {
+        if (view.findViewById<TextInputEditText>(R.id.etNameRegister).text?.trim()
+                .isNullOrBlank()
+        ) {
             view.findViewById<TextInputLayout>(R.id.tfNameRegister).error = "Nome Vazio"
             resultado = false
         }
 
-        if (view.findViewById<TextInputEditText>(R.id.etEmailRegister).text?.trim().isNullOrBlank()) {
+        if (view.findViewById<TextInputEditText>(R.id.etEmailRegister).text?.trim()
+                .isNullOrBlank()
+        ) {
             view.findViewById<TextInputLayout>(R.id.tfEmailRegister).error = "E-mail Vazio"
             resultado = false
         }
 
-        if (view.findViewById<TextInputEditText>(R.id.etPassRegister).text?.trim().isNullOrBlank()) {
+        if (view.findViewById<TextInputEditText>(R.id.etPassRegister).text?.trim()
+                .isNullOrBlank()
+        ) {
             view.findViewById<TextInputLayout>(R.id.tfPassRegister).error = "Password Vazio"
             resultado = false
         }
 
-        if (view.findViewById<TextInputEditText>(R.id.etRptPassRegister).text?.trim().isNullOrBlank()) {
+        if (view.findViewById<TextInputEditText>(R.id.etRptPassRegister).text?.trim()
+                .isNullOrBlank()
+        ) {
             view.findViewById<TextInputLayout>(R.id.tfRptPassRegister).error = "Password Vazio"
             resultado = false
         }
 
-        if (view.findViewById<TextInputEditText>(R.id.etNameRegister).text?.trim().isNullOrBlank()) {
+        if (view.findViewById<TextInputEditText>(R.id.etNameRegister).text?.trim()
+                .isNullOrBlank()
+        ) {
             view.findViewById<TextInputLayout>(R.id.tfNameRegister).error = "Nome Vazio"
             resultado = false
         }
 
-        if (view.findViewById<TextInputEditText>(R.id.etEmailRegister).text?.trim().isNullOrBlank()) {
+        if (view.findViewById<TextInputEditText>(R.id.etEmailRegister).text?.trim()
+                .isNullOrBlank()
+        ) {
             view.findViewById<TextInputLayout>(R.id.tfEmailRegister).error = "E-mail Vazio"
             resultado = false
         }
 
-        if (view.findViewById<TextInputEditText>(R.id.etPassRegister).text?.trim().isNullOrBlank()) {
+        if (view.findViewById<TextInputEditText>(R.id.etPassRegister).text?.trim()
+                .isNullOrBlank()
+        ) {
             view.findViewById<TextInputLayout>(R.id.tfPassRegister).error = "Password Vazio"
             resultado = false
         }
 
         if (view.findViewById<TextInputEditText>(R.id.etPassRegister).text!!.length < 8) {
-            view.findViewById<TextInputLayout>(R.id.tfPassRegister).error = "Password deve ter no mínimo 8 caracteres"
+            view.findViewById<TextInputLayout>(R.id.tfPassRegister).error =
+                "Password deve ter no mínimo 8 caracteres"
             resultado = false
         }
 
-        if (view.findViewById<TextInputEditText>(R.id.etPassRegister).text.toString() != view.findViewById<TextInputEditText>(R.id.etRptPassRegister).text.toString()) {
+        if (view.findViewById<TextInputEditText>(R.id.etPassRegister).text.toString() != view.findViewById<TextInputEditText>(
+                R.id.etRptPassRegister
+            ).text.toString()
+        ) {
             view.findViewById<TextInputLayout>(R.id.tfRptPassRegister).error =
                 "Passwords não coincidem"
             resultado = false
         }
-
         return resultado
-
     }
-
-
 }

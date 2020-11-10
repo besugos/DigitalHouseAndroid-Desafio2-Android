@@ -7,14 +7,14 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class PratoAdapter (private val dataSetPratos: List<Prato>, private val listener: (Prato) -> Unit) :
+class PratoAdapter (private val dataSetPratos: List<PratoModel>, private val listener: (PratoModel) -> Unit) :
     RecyclerView.Adapter<PratoAdapter.ViewHolderPratos>() {
 
     class ViewHolderPratos(view: View) : RecyclerView.ViewHolder(view) {
         private val imgRestaurante: ImageView = view.findViewById(R.id.ivPic)
         private val txtNome: TextView = view.findViewById(R.id.tvNomeRestaurante)
 
-        fun bind(restaurante: Prato) {
+        fun bind(restaurante: PratoModel) {
             imgRestaurante.setImageResource(restaurante.fotoURL)
             txtNome.text = restaurante.nome
         }

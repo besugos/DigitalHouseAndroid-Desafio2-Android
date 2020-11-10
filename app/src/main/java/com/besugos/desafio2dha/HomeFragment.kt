@@ -12,12 +12,10 @@ import androidx.recyclerview.widget.RecyclerView
 
 class HomeFragment : Fragment() {
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
 
@@ -26,50 +24,28 @@ class HomeFragment : Fragment() {
 
         val viewManager = LinearLayoutManager(context)
 
-        //val viewManager = GridLayoutManager(this, 2)
-
         val recyclerView = view.findViewById<RecyclerView>(R.id.rv_lista)
 
-        val rest1 = Restaurante(
-            (R.drawable.tony),
-            "Tony Roma's",
-            "Av. Lavandisca, 717 - Indianópolis, São Paulo",
-            "Fecha às 22:00"
-        )
-        val rest2 = Restaurante(
-            R.drawable.aoyama,
-            "Aoyama - Moema",
-            "Alameda dos Arapanés, 532 - Moema",
-            "Fecha às 00:00"
-        )
-        val rest3 = Restaurante(
-            R.drawable.outbackmoema,
-            "Outback - Moema",
-            "Av. Moaci, 187, 187 - Moema, São Paulo",
-            "Fecha às 00:00"
-        )
-        val rest4 = Restaurante(
-            R.drawable.sisenor,
-            "Sí Señor!",
-            "Alameda Jauaperi, 626 - Moema",
-            "Fecha às 01:00"
-        )
+        val repository = Repository()
 
+        val rest1 = repository.rest1
+        val rest2 = repository.rest2
+        val rest3 = repository.rest3
+        val rest4 = repository.rest4
 
         val viewAdapter = RestauranteAdapter(arrayListOf(rest1, rest2, rest3, rest4)) {
             val navController = Navigation.findNavController(view)
-                val bundle = bundleOf("NOME" to it.nome, "FOTO" to it.fotoURL)
-                navController.navigate(R.id.restauranteFragment, bundle)
-
+            val bundle = bundleOf(
+                "NOME" to it.nome, "FOTO" to it.fotoURL,
+                "FOTO_PRATO" to it.prato.fotoURL, "NOME_PRATO" to it.prato.nome,
+                "RECEITA_PRATO" to it.prato.receita
+            )
+            navController.navigate(R.id.restauranteFragment, bundle)
         }
-
         recyclerView.apply {
             setHasFixedSize(true)
             layoutManager = viewManager
             adapter = viewAdapter
-
-
         }
-
     }
 }

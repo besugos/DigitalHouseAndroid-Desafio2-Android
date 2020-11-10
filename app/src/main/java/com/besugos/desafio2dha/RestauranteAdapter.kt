@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class RestauranteAdapter(private val dataSetRestaurantes: List<Restaurante>, private val listener: (Restaurante) -> Unit) :
+class RestauranteAdapter(private val dataSetRestaurantes: List<RestauranteModel>, private val listener: (RestauranteModel) -> Unit) :
     RecyclerView.Adapter<RestauranteAdapter.ViewHolderRestaurantes>() {
 
     class ViewHolderRestaurantes(view: View) : RecyclerView.ViewHolder(view) {
@@ -16,13 +16,12 @@ class RestauranteAdapter(private val dataSetRestaurantes: List<Restaurante>, pri
         private val txtLocal: TextView = view.findViewById(R.id.tvLocal)
         private val txtHora: TextView = view.findViewById(R.id.tvHora)
 
-        fun bind(restaurante: Restaurante) {
+        fun bind(restaurante: RestauranteModel) {
             imgRestaurante.setImageResource(restaurante.fotoURL)
             txtNome.text = restaurante.nome
             txtLocal.text = restaurante.local
             txtHora.text = restaurante.hora
         }
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolderRestaurantes {
