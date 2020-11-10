@@ -41,7 +41,7 @@ class DetalheFragment : Fragment() {
 
         val viewAdapter = PratoAdapter(pratos) {
             val bundle = bundleOf("FOTO" to it.fotoURL, "NOME" to it.nome, "RECEITA" to it.receita)
-            navController.navigate(R.id.homeFragment, bundle)
+            navController.navigate(R.id.pratoFragment, bundle)
         }
 
         recyclerView.apply {

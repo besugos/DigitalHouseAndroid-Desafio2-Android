@@ -8,7 +8,7 @@
     >
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgFotoPrato"
         android:layout_width="match_parent"
         android:layout_height="260dp"
         android:layout_alignParentStart="true"
@@ -25,7 +25,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/btnBackDetalhe"
+        android:id="@+id/btnBackPrato"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -38,10 +38,10 @@
         />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtNomePrato"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignBottom="@+id/imgFotoPrato"
         android:layout_alignParentStart="true"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="8dp"
@@ -49,24 +49,24 @@
         android:text="@string/tony_roma_s"
         android:textColor="@android:color/white"
         android:textFontWeight="900"
-        android:textSize="24sp"
-        />
+        android:textSize="24sp" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:id="@+id/txtReceitaPrato"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView"
+        android:layout_below="@+id/imgFotoPrato"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         android:fontFamily="@font/roboto"
         android:text="@string/pratos_principais"
         android:textColor="@color/colorDescricao"
         android:textFontWeight="900"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </RelativeLayout>
